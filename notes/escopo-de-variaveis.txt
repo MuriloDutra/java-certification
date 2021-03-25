@@ -1,0 +1,57 @@
+- Comando para COMPILAR o código Java: javac Teste.java 
+
+- Comando para EXECUTAR o código Java: java Teste
+
+- Variáveis ESTÁTICAS terão o mesmo valor em todas as suas instâncias e podem ser acessadas através de qualquer escopo.
+    EXEMPLO:
+        class Pessoa {
+            static int id = 1;
+        }
+
+        public class SomeOtherClass {
+            public SomeOtherClass(){
+                Pessoa p01 = new Pessoa();
+                Pessoa p02 = new Pessoa();
+
+                System.out.println("P ID: " + p01.id); //resultado é 1
+                System.out.println("P1 ID: " + p02.id); //resultado também será 1
+                System.out.println("Pessoa ID: " + Pessoa.id); //resultado também será 1
+            }
+        }
+
+- Métodos ESTÁTICOS terão o mesmo valor em todas as suas instâncias e podem ser acessados através de qualquer escopo.
+    EXEMPLO:
+        class Pessoa {
+            static int id = 1;
+            static void metodo(){
+                System.out.println(id);
+            }
+        }
+
+        public class SomeOtherClass {
+            public SomeOtherClass(){
+                Pessoa.metodo();
+            }
+        }
+
+- Acessando variáveis de instância e static:
+    EXEMPLO:
+        instância - this.variable
+        static - Pessoa.variable
+
+- É possível mudar o valor de uma variável ESTÁTICA
+    EXEMPLO:
+        class Pessoa {
+            static int id = 1;
+        }
+
+        public class SomeOtherClass {
+            public SomeOtherClass(){
+                Pessoa p1 = new Pessoa();
+                Pessoa p2 = new Pessoa();
+                p2.id = 100;
+
+                System.out.println("P1 ID: " + p1.id); //resultado será 100
+                System.out.println("P2 ID: " + Pessoa.id); //resultado também será 100
+            }
+        }        
