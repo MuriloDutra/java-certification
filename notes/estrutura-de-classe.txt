@@ -1,0 +1,27 @@
+- Classes Java só podem ter uma interface ou class ou tipo com a keyword 'public'
+    EXEMPLO:
+        public class MainClass { //única que pode ser 'public' e o nome deve ser igual ao nome do arquivo
+
+        }
+
+        class OtherClass{
+
+        }
+
+        interface Pessoa{
+
+        }
+
+- Construtores não podem retornar nenhum valor, pois ele já retornam uma instância de classe.
+    EXEMPLO: 
+        public class Pessoa {
+            Pessoa(String nome){
+                //do something
+
+                //return someValue - ERRADO
+                return //CERTO
+            }
+        }
+
+        No caso acima, uma "Pessoa" será retornada, uma instância de Pessoa.
+

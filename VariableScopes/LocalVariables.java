@@ -1,3 +1,5 @@
+package VariableScopes;
+
 class Pessoa {
     static int id = 1;
     static void metodo(){
