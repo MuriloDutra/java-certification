@@ -25,3 +25,5 @@
 
         No caso acima, uma "Pessoa" será retornada, uma instância de Pessoa.
 
+
+- Caso o arquivo java esteja dentro de um diretório, sem ser o raiz, "package NomeDoDiretorio" sempre deve ser a primeira informação a aparecer no arquivo

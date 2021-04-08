@@ -1,0 +1,4 @@
+JDK (Java Development Kit)
+JVM (Java Virtual Machine)
+JRE (Java Runtime Environment)
+Um arquivo JAR nada mais é que a pasta de nossas classes no formato ZIP mas com extensão .jar.

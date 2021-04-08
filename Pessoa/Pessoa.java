@@ -1,4 +1,4 @@
-package Pessoa;//Sempre deve ser a primeira informação a aparecer no arquivo 
+package Pessoa;//"package" sempre deve ser a primeira informação a aparecer no arquivo 
 import java.util.Date;
 import java.io.*;
 

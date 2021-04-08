@@ -1,7 +1,3 @@
-- Comando para COMPILAR o código Java: javac Teste.java 
-
-- Comando para EXECUTAR o código Java: java Teste
-
 - Variáveis ESTÁTICAS terão o mesmo valor em todas as suas instâncias e podem ser acessadas através de qualquer escopo.
     EXEMPLO:
         class Pessoa {
