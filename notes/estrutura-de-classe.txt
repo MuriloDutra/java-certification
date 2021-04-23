@@ -26,4 +26,7 @@
         No caso acima, uma "Pessoa" será retornada, uma instância de Pessoa.
 
 
-- Caso o arquivo java esteja dentro de um diretório, sem ser o raiz, "package NomeDoDiretorio" sempre deve ser a primeira informação a aparecer no arquivo
+- Para um arquivo java ser executável na linha de comando, deve ter o método main()
+
+
+- Uma classe só necessita ser "public" caso vá ser acessada por classes de outros pacotes.

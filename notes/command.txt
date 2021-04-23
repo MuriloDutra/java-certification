@@ -1,14 +1,21 @@
 - Comando para COMPILAR o código Java:
     javac Teste.java 
 
+
 - Comando para EXECUTAR o código Java:
     java Teste
+
 
 - Comando para passar ARGUMENTOS/PARÂMETROS para um arquivo java executável na linha de comando:
     java Teste argumento01 argumento02 argumento03
 
+
 - É possível passar propriedades na hora de executar um arquivo, as propriedades devem ser passadas antes do nome do arquivo:
     java -Dsistema=producao -Dproduto=bolaDeFutebol Teste
 
+
 - Para compilar, estamos trabalhando com arquivos e diretórios, portanto javac b/A.java; enquanto, para rodar, 
   estamos pensando em pacotes e classes: java b.A.
+
+
+- É possível compilar todas as classes de um package a partir do seguinte comando: javac seuPackage/*.java

@@ -1,0 +1,58 @@
+- TODO pacote deve ter seu nome em minúsculo.
+
+
+- Suponha que você possui um site com o seguinte domínio: 'alura.com.br'. Os pacotes iniciais do seu projeto devem ser iniciados da seguinte forma:
+    br -> com -> alura -> restante do seu projeto...
+
+
+- Caso o arquivo java esteja dentro de um diretório, sem ser o raiz, "package NomeDoDiretorio" sempre deve ser a primeira informação a aparecer no arquivo
+
+
+- Suponha que o package "modelo" tem duas classes dentro de si, a class "Pessoa.java" e "Endereco.java". Caso a classe Pessoa precise da Endereco,
+  basta digitar o nome da classe como um tipo, sem a necessidade de importar Endereco. O motivo disso é que o Java irá procurar no package "modelo" se há
+  uma class "Endereco" e importá-la automaticamente.
+
+
+- É possível importar uma classe de outro pacote das seguintes maneiras:
+    1 * outroPacote.NomeDaClasse;
+
+    2 * import outroPacote.NomeDaClasse;
+
+
+- Para importar todos os arquivos de um pacote: import algumPacote.*;
+  Importante salientar que com o comando mostrado acima, será importado TODOS os ARQUIVOS, ou seja, se dentro de 'algumPacote'
+  tiver uma classe 'Pessoa.java' e um pacote 'pacoteDoUsuario', apenas a classe 'Pessoa.java' será acessível.
+  Com esse comando NÃO é possível importar pacotes/pastas.
+
+
+- Não é possível importar duas classes com mesmo nome, porém de diferentes pacotes, por exemplo:
+    import java.util.Date;
+    import java.sql.Date;
+
+  Uma alternativa viável seria:
+    import java.util.*;
+    import java.sql.Date;
+
+    Date dataDoSql = new Date();
+    java.util.Date dataDoJava = new java.util.Date();
+
+
+- Não é possível que uma classes de um pacote acesse uma classe do pacote raiz.
+
+
+- É possível importar variáveis e métodos estáticos de outras classes em outros pacotes:
+    import static modelo.Util.TAMANHO; //variável
+    import static modelo.Util.metodoDeSoma; //método
+
+    OU
+
+    import static modelo.Util.*; //TAMANHO e metodoDeSoma ficam acessíveis
+
+
+- Existem algumas convenções para nomes de pacotes. Elas não são obrigatórias, mas geralmente são seguidas para facilitar o entendimento e
+  organização do código:
+
+    * O nome do pacote deve ser todo em letras minúsculas;
+    * Um pacote deve começar com o site da empresa, ao contrário;
+    * Após o site, deve vir o projeto;
+    * Após o projeto, a estrutura é livre.
